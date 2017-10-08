@@ -1765,11 +1765,11 @@ class Addresses extends Common_functions {
 	 * @return void
 	 */
 	public function compress_address_ranges ($addresses, $state=4) {
-    	# set size
-    	$size = sizeof($addresses);
-    	// vars
-    	$addresses_formatted = array();
-    	$fIndex = int;
+		# set size
+		$size = sizeof($addresses);
+		// vars
+		$addresses_formatted = array();
+		$fIndex = 0;
 
 		# loop through IP addresses
 		for($c=0; $c<$size; $c++) {
