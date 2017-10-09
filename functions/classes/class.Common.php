@@ -221,10 +221,10 @@ class Common_functions  {
 			}
 			# save to cache array
 			if($res !== null && sizeof($res)>0) {
-			// set identifier
-			$method = $this->cache_set_identifier ($table);
-			// save
-			$this->cache_write ($table, $res->{$method}, $res);
+				// set identifier
+				$method = $this->cache_set_identifier ($table);
+				// save
+				$this->cache_write ($table, $res->{$method}, $res);
 				return $res;
 			}
 			else {
