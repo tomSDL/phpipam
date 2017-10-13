@@ -76,6 +76,10 @@ if(isset($_GET['subnetId'])) {
     elseif(@$_GET['sPage']=="circuits") {
         include("device-details/device-circuits.php");
     }
+	 }
+    elseif(@$_GET['sPage']=="ports") {
+        include("device-details/device-ports.php");
+    }
 } else {
 	include('all-devices.php');
 }
