@@ -1,7 +1,7 @@
 <?php
 # location
 if ($User->settings->enableLocations=="1") {
-    print "<h4>"._('Location')."</h4><hr>";
+    print "<h4>"._('Ports')."</h4><hr>";
     // set?
     if ($device->location!=0 && strlen($device->location)>0) {
         // array
